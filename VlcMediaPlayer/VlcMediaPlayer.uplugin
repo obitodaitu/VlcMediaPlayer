@@ -1,0 +1,62 @@
+{
+	"FileVersion": 1,
+
+	"FriendlyName": "VLC Media Player",
+	"Version": 1,
+	"VersionName": "1.0",
+	"CreatedBy": "obitodaitu",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"EngineVersion": "5.5.0",
+	"Description": "Implements a media player using the libvlc for unreal engine.",
+	"Category": "Media Players",
+	"EnabledByDefault": true,
+	"IsBetaVersion": false,
+	"CanContainContent": false,
+	"Modules": [
+		{
+			"Name": "VlcMediaPlayer",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen",
+			"PlatformAllowList": [
+				"Win64"
+			],
+			"PlatformDenyList": [
+				"Android"
+			]
+		},
+		{
+			"Name": "VlcMediaPlayerFactoryEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+				"Win64"
+			],
+			"PlatformDenyList": [
+				"Android"
+			]
+		},
+		{
+			"Name": "VlcMediaPlayerFactory",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+				"Win64"
+			],
+			"PlatformDenyList": [
+				"Android"
+			]
+		},
+		{
+			"Name": "VlcMediaPlayerFactory",
+			"Type": "Runtime",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+				"Win64"
+			],
+			"PlatformDenyList": [
+				"Android"
+			]
+		}
+	]
+}
